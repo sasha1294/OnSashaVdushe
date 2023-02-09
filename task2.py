@@ -20,5 +20,12 @@
 #     test.assert_equals(sum_of_integers_in_string(testString), correctAnswer)
 
 # Start resolving! Good luck!
-def sum_of_integers_in_string(s):
-    return#what the function name says
+y = iput()
+l = len(y)
+u = 0
+for i in range(l):
+    t = isdigit(y)
+    if t == "True":
+        i = int(y)
+        u += i
+print(u)

@@ -1,4 +1,4 @@
-#Возвращает функцию, которая обрезает строку (задан первый аргумент), если она длиннее максимальной длины строки
+#иВозвращает функцию, которая обрезает строку (задан первый аргумент), если она длиннее максимальной длины строк
 # (задан второй аргумент). Результат также должен заканчиваться на "..."
 #Эти точки в конце также увеличивают длину строки.
 #Итак, в приведенном выше примере trim("Создание ката - это весело", 14) должен возвращать "Создание ка..."
@@ -25,5 +25,16 @@
 #         test.assert_equals(trim("London is freezing",18),"London is freezing")
 
 # Start resolving! Good luck!
-def trim(phrase, size):
+def trim(phrase, size, test, u):
     raise NotImplementedError("TODO: trim")
+phrase = input()
+size = int(input())
+test = len(phrase)
+if size <= 3:
+    u =  phrase.strip(phrase[size])
+    print(u"...")
+elif size == test:
+    print(phrase)
+if size > 3:
+    u = phrase.strip(phrase[size])
+    print(u"...")
